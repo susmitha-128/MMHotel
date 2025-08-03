@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Customizable Snack Box</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Welcome to MM hotel</h1>
+    <p>Select your favorite mkenu,order and enjoy our delicacies.</p>
+
+    <div class="form-section">
+      <label for="snack">Menu</label>
+      <select id="snack">
+        <option value="Idli">Idli - ₹30</option>
+        <option value="Chapathi">Chapathi - ₹30</option>
+        <option value="Bonda">Bonda - ₹35</option>
+        <option value="Dosa">Dosa - ₹50</option>
+        <option value="Upma">Upma - ₹25</option>
+      </select>
+
+      <label for="qty">Quantity</label>
+      <input type="number" id="qty" min="1" value="1"/>
+
+      <button onclick="addSnack()">Add to Box</button>
+    </div>
+    
+    <div class="bill-section">
+      <h2>Your Order Box</h2>
+      <table id="bill-table">
+        <thead>
+          <tr>
+            <th>Item</th>
+            <th>Qty</th>
+            <th>Price</th>
+          </tr>
+        </thead>
+        <tbody id="bill-body"></tbody>
+      </table>
+      <h3 id="total">Total: ₹0.00</h3>
+      <button class="checkout" onclick="checkout()">Finalize Box</button>
+    </div>
+  </div>
+  <div class="cont_two">
+    <h2 id="cont"></h2>
+  </div>
+  
+  
+
+  <script src="script.js"></script>
+</body>
+</html>
