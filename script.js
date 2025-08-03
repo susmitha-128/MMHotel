@@ -3,7 +3,7 @@ const snackPrices = {
   "Chapathi": 30,
   "Bonda": 35,
   "Dosa": 50,
-  "upma": 25
+  "Upma": 25
 };
 
 let total = 0;
